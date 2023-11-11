@@ -1,0 +1,8 @@
+# start cypress
+npx cypress open
+
+# run cypress on cli
+npx cypress run 
+
+# run cypress on cli in headed mode with specific browser
+npx cypress run --headed --browser <edge | chrome | firefox>

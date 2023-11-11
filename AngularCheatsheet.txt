@@ -1,0 +1,22 @@
+# install angular cli
+npm install -g @angular/cli
+
+# create new angular project
+ng new <project name>
+
+# create new angular component
+ng generate component <component name> || ng g c <component name>
+
+# create new angular pipe
+ng generate pipe <pipe name> || ng g pipe filter
+
+# create new service
+ng generate service <service name> || ng g c service
+
+# install firebase into Angular 15
+npm install firebase @angular/fire
+
+# Detailed uninstallation of angular to downgrade/upgrade
+npm uninstall -g angular-cli
+npm cache clean
+npm install -g angular-cli@1.6.1

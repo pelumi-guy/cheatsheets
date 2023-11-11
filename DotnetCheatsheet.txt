@@ -1,0 +1,76 @@
+# Create new C# console app
+dotnet new console
+
+## or target specific .Net version with
+dotnet new console -f <version>
+e.g: dotnet new console -f net5.0
+
+# Create New .Net Interactive Notebook
+Ctrl + Shift + Alt + N
+
+# Run Code in Visual Studio
+Ctrl + F5
+
+# Google search tip
+garbage collection site:stackoverflow.com +C# -Java
+
+# string definition syntax
+string[] names2 = new[] { "Kate", "Jack", "Rebecca", "Tom" };
+
+# syntax for C# switch expression
+string suffix = lastDigit switch
+{
+1 => "st",
+2 => "nd",
+3 => "rd",
+_ => "th"
+};
+
+
+# TryParse syntax
+if (int.TryParse(input, out int count))
+{
+	WriteLine($"There are {count} eggs.");
+}
+else
+{
+	WriteLine("I could not parse the input.");
+}
+
+# create class library using dotnet CLI
+dotnet new classlib -n YourLibraryName
+
+## to specify a particular directory for the project creation
+dotnet new classlib -n YourLibraryName -o YourDirectoryPath
+
+# Comment lines in Visual Studio
+Ctrl + K + C
+
+# Add class library
+dotnet new classlib -o StringLibrary
+
+# Add project reference
+dotnet add reference <project/location>
+
+# Add nugget package reference
+dotnet add package <Package.Name>
+
+# Add library reference to solution
+dotnet sln add StringLibrary/StringLibrary.csproj
+
+# null checking plus null-coalescing operator
+ // result will be 3 if authorName?.Length is null
+int result = authorName?.Length ?? 3;
+Console.WriteLine(result);
+
+# create new razor pages project
+dotnet new webapp -o <project name>
+
+# create new ASP.NET Core MVC project
+dotnet new mvc -o <project name>
+
+# Trust the https development certificate after creating any ASP.NET Core web app
+dotnet dev-certs https --trust
+
+# open project folder in the current instance of Visual Studio Code.
+code -r <project folder path>
