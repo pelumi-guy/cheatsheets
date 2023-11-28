@@ -1,3 +1,6 @@
+# Git bash aliases location
+/etc/profile.d/aliases.sh
+
 # Clone a branch with PAT
 git clone https://[PERSONALACCESSTOKEN]@github.com/[USERNAME]/[REPO].git
 

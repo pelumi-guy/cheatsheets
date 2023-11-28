@@ -8,6 +8,9 @@ e.g: dotnet new console -f net5.0
 # Create New .Net Interactive Notebook
 Ctrl + Shift + Alt + N
 
+# Control the.NET SDK used by default in a project (by using a global.json)
+dotnet new globaljson --sdk-version 3.1.412
+
 # Run Code in Visual Studio
 Ctrl + F5
 
@@ -47,13 +50,16 @@ dotnet new classlib -n YourLibraryName -o YourDirectoryPath
 Ctrl + K + C
 
 # Add class library
-dotnet new classlib -o StringLibrary
+dotnet new classlib -o <class-library-name>
 
 # Add project reference
 dotnet add reference <project/location>
 
 # Add nugget package reference
 dotnet add package <Package.Name>
+
+# Add specific nugget package version reference
+dotnet add package packageName --version versionNumber
 
 # Add library reference to solution
 dotnet sln add StringLibrary/StringLibrary.csproj
