@@ -1,0 +1,11 @@
+# Create new React app
+npx create-react-app <app-name>
+
+# Create new React app scaffold with vite
+npm create vite@latest
+
+# starting a json-server
+npx json-server --watch <dir> --port <portnum>
+
+# installing react icons
+npm install react-icons --save

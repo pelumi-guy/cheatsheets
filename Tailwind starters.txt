@@ -1,0 +1,18 @@
+yarn add tailwindcss 
+
+npx tailwindcss init
+ 
+yarn add postcss-cli
+ 
+yarn add autoprefixer
+
+"scripts": {
+"build:css": "postcss src/index.css -o src/tailwind.css",
+"watch:css": "postcss src/index.css -o src/tailwind.css -w",
+"start": "yarn build:css && react-scripts start",
+"build": "yarn build:css && react-scripts build",
+}
+
+original scripts:
+"start": "react-scripts start",
+"build": "react-scripts build",

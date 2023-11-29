@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# To expose the port 5001 of my vm to the port 5001 on my computer
+# In your Vagrantfile, add this line for each port forwarded
+config.vm.network :forwarded_port, guest: 5001, host: 5001 
+
+** if you need to expose other ports, same line but you will need to replace the “guest port”
+** (inside your vagrant) and your “host port” (outside your vagrant, used from your browser for example)
+
+# Enforce LF line endings with git
+(inside a .gitattributes file) --->
+* text eol=lf
+
+# Kill a running program with the process id of the program
+ps -e | grep <program name> => get pid
+kill <pid_of_program>
+
+# Location to add aliases in git bash
+/etc/profile.d/aliases.sh
+
+for f in file; do echo -e "#!/bin/bash" >> $f; done
+
+echo -e '#!/bin/bash\n' | tee 0-preprocessor 1-compiler 2-assembler 3-name > /dev/null
+
+for 
+do
+    echo "Text" >> $file
+done
+
+touch 
+
+int _putchar(char c);
+
+:%le to remove front spaces in vim
+:%s/\s\+$//e to remove all trailing white spaces in vim
+:wq++ff=unix to convert file to unix format
+:%s/find/replace/g (g flag meaning global)
+
+Pedantic gcc compilation flag
+-Wall -Werror -Wextra -pedantic -std=gnu89
+
+# Install chrome
+sudo apt install ./google-chrome-stable_current_amd64.deb

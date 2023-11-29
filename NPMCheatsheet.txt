@@ -1,0 +1,3 @@
+# Upgrade all installed packages
+ncu -u
+npm install

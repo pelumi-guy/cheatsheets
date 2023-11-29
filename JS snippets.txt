@@ -1,0 +1,20 @@
+# Typical react image
+<img loading='lazy' alt="Back"
+	style={{ width: "500%", height: "500%"}}
+	onClick={toggle}
+	src={require(`./images/LeftArrow.svg`).default}
+/>
+
+# Use Image reader to get image data
+const onChange = (e) => {
+        const reader = new FileReader();
+
+        reader.onload = () => {
+            if (reader.readyState === 2) {
+                setImageData(reader.result);
+            }
+        }
+
+reader.readAsDataURL(e.target.files[0])
+
+}
