@@ -1,0 +1,19 @@
+# Installing flask in a python virtual environment
+
+** Firstly check the python3-venv for creating python virtual environemts is installed 
+** or run command below to install
+sudo apt install python3-venv
+
+** Then create flask app directory
+mkdir flask_app && cd flask_app
+
+** Run the following command inside the directory to create the virtual environment named venv:
+python3 -m venv <name>
+
+** To start using the virtual environment, you need to activate it with the activate script:
+source venv/bin/activate
+# For windows (with administrator permissions)
+<name>/Scripts/activate.bat
+
+** Now that the virtual environment is activated, use the Python package manager pip to install Flask:
+pip install Flask
