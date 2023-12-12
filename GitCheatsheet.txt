@@ -2,7 +2,7 @@
 /etc/profile.d/aliases.sh
 
 # Clone a branch with PAT
-git clone https://[PERSONALACCESSTOKEN]@github.com/[USERNAME]/[REPO].git
+git clone https://[PERSONALACCESSTOKEN]@github.com/[USERNAME]/[REPO].git ...
 
 # To create a new repository on the command line
 echo "# printf" >> README.md
