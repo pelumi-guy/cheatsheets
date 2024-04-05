@@ -80,3 +80,7 @@ dotnet dev-certs https --trust
 
 # open project folder in the current instance of Visual Studio Code.
 code -r <project folder path>
+
+# Applying migration
+Add-Migration <migration name>
+Update-Database
