@@ -48,3 +48,6 @@ git branch --unset-upstream
 
 ## Push the new branch
 git push origin new-branch
+
+# Remove all cached data of a tracked file/folder
+git rm --cached <file/folder name>
