@@ -17,7 +17,7 @@ Ctrl + F5
 # Google search tip
 garbage collection site:stackoverflow.com +C# -Java
 
-# string definition syntax
+# array definition syntax
 string[] names2 = new[] { "Kate", "Jack", "Rebecca", "Tom" };
 
 # syntax for C# switch expression
@@ -84,3 +84,6 @@ code -r <project folder path>
 # Applying migration
 Add-Migration <migration name>
 Update-Database
+
+# Creating a class library for entity models sample
+dotnet ef dbcontext scaffold "Data Source=.; Initial Catalog=Northwind; Integrated Security=true; MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer --namespace Packt.Shared --data-annotations --project Northwind.Common.EntityModels.Sqlite
