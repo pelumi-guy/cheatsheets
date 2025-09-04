@@ -51,3 +51,6 @@ git push origin new-branch
 
 # Remove all cached data of a tracked file/folder
 git rm --cached <file/folder name>
+
+# Set Upstream for an Existing Remote Branch
+git branch --set-upstream-to=origin/<remote-branch-name>
